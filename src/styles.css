@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'big shoulders display';
+    src: url('/public/fonts/BigShouldersDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'outfit';
+    src: url('/public/fonts/Outfit-VariableFont_wght.ttf')
+}
+
+* {
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
+
+body{
+    margin: 0px;
+}
+
+:root{
+    --font-one: 'big shoulders display';
+    --font-two: 'outfit';
+    --closest: 100;
+    --closer: 75;
+    --close: 50;
+    --far: 25;
+    --farthest: -1;
+}   

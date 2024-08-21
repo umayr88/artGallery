@@ -1,0 +1,86 @@
+.map{
+    height: 600px;
+    position: relative;
+    background-image: url('./images/image-map.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.map_button{
+    width: 264px;
+    height: 72px;
+    padding: 0px;
+    background-color: var(--Almost-Black, #151515);
+    position: absolute;
+    top: 0px;
+    left: 156px;
+    text-transform: uppercase;
+    color: var(--White, #FFF);
+    font-family: var(--font-one);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 3.636px;
+    border: none;
+    cursor: pointer;
+    text-align: right;
+    padding-right: 35px;
+}
+
+.map_button:hover{
+    background-color: var(--Gold, #D5966C);
+}
+
+.map_button::before{
+    content: url('./icons/icon-arrow.svg');
+    width: 56px;
+    height: 72px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+.map_button::after{
+    content: url('./icons/icon-arrow-hover.svg');
+    width: 56px;
+    height: 72px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}   
+
+.map_button:hover::before{
+    opacity: 0;
+}
+
+.map_button:hover::after{
+    opacity: 1
+}
+
+
+@media(max-width: 800px){
+    .map{
+        background-image: url('./images/image-map-tablet.png');
+    }
+
+    .map_button{
+        left: 39px;
+    }
+}
+
+@media(max-width: 650px){
+    .map{
+        height: 550px;
+        background-image: url('./images/image-map-mobile.png');
+    }
+
+    .map_button{
+        left: 0px;
+    }
+}
